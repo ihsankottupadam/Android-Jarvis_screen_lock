@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_vertical"
+	android:paddingTop="8dp"
+	android:paddingBottom="8dp"
+    android:paddingLeft="20dp"
+	android:paddingRight="20dp"
+	android:background="@drawable/noti_item_bg"
+	>
+<RelativeLayout
+	android:id="@+id/not_mainlay"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<ImageView
+		android:id="@+id/icon"
+		android:layout_width="20dp"
+		android:layout_height="20dp"
+		android:tint="#5BF8F9"
+		/>
+<TextView
+	android:id="@+id/AppName"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:textSize="12sp"
+	android:layout_marginLeft="8dp"
+	android:layout_toRightOf="@+id/icon"
+	android:textColor="#ffffff"
+	/>
+<TextView
+	android:id="@+id/Time"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:textSize="12sp"
+	android:layout_toRightOf="@+id/AppName"
+	android:layout_marginLeft="8dp"/>
+<TextView
+	android:id="@+id/Title"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:textSize="13sp"
+	android:paddingTop="8dp"
+	android:textColor="#ffffff"
+	android:layout_below="@+id/icon"
+/>
+	<TextView
+		android:id="@+id/Message"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textSize="13sp"
+		android:paddingTop="8dp"
+		android:maxLines="2"
+		android:padding="0dp"
+		android:textColor="#99ffffff"
+		android:layout_below="@+id/Title"
+		/>
+</RelativeLayout>
+</RelativeLayout>
+

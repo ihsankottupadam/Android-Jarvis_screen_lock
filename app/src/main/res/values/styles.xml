@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="BaseTheme" parent="@android:style/Theme.Holo">
+		<item name="android:actionBarStyle">@style/myTheme.AppActionBar</item>
+		<item name="android:homeAsUpIndicator">@drawable/ic_back_white</item>
+		<item name="android:actionMenuTextColor">#5BF8F9</item>
+	</style>
+	<style name="MainTheme" parent="@style/BaseTheme">
+
+	</style>
+	<style name="AppTheme" parent="@style/BaseTheme">
+		<item name="android:actionBarStyle">@style/myTheme.AppActionBar</item>
+	</style>
+	<style name="AppTheme.FullScreen">
+		<item name="android:windowFullscreen">true</item>
+	</style>
+    <style name="Theme.FullScreen" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+	</style>
+	<style name="AppTheme.NoActionBar" parent="@android:style/Theme.Holo.NoActionBar">
+		<item name="android:actionBarStyle">@style/myTheme.ActionBar</item>
+		<item name="android:homeAsUpIndicator">@drawable/ic_back_white</item>
+		<item name="android:actionMenuTextColor">#5BF8F9</item>
+	</style>
+	<style name="ThemeTransparent" parent="@android:style/Theme.Translucent"/>
+	<style name="myTheme.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+    <item name="android:background">#5175B9</item>
+	 <item name="android:titleTextStyle">@style/myTheme.ActionBar.Text</item>
+	 <item name="android:displayOptions">showTitle</item>
+	</style>
+	<style name="myTheme.AppActionBar" parent="@android:style/Widget.Holo.ActionBar">
+		<item name="android:background">#5175B9</item>
+		<item name="android:titleTextStyle">@style/myTheme.ActionBar.Text</item>
+		<item name="android:displayOptions">homeAsUp|showTitle</item>
+	</style>
+	
+	<style name="AppCompat" parent="Theme.AppCompat">
+		<item name="colorPrimary">#5175B9</item>
+        <item name="colorPrimaryDark">#4567A0</item>
+        <item name="colorAccent">#5BF8F9</item>
+		
+		<item name="android:actionBarStyle">@style/AppCompat.ActionBar</item>
+	</style>
+	
+	
+	<!--to check-->
+	<style name="AppCompat.ActionBar" parent="Widget.AppCompat.ActionBar">
+		<item name="android:background">#5175B9</item>
+		<item name="android:displayOptions">homeAsUp|showTitle</item>
+	</style>
+	
+	<style name="PrefTheme" parent="@style/BaseTheme">
+		<item name="android:windowBackground">@drawable/bg1</item>
+        <item name="android:background">#00000000</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name="myTheme.ActionBar.Text" parent="@android:style/TextAppearance">
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name="button_keypad_lock" parent="android:Widget.Button">
+		<item name="android:textColor">#5BF8F9</item>
+		<item name="android:shadowColor">#5BF8F9</item> 
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">0</item>
+		<item name="android:textSize">25sp</item>
+		<item name="android:shadowRadius">20</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:background">@drawable/btn_lock_pad</item>
+	</style>
+	
+	
+	
+	
+	
+		
+
+		
+		
+</resources>
+

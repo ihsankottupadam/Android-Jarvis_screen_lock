@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="Settings"
+	android:key="Settings"
+>
+	<SwitchPreference
+        android:key="IS_ENABLED"
+        android:title="Enabled"
+        android:defaultValue="true" />
+	<PreferenceScreen  android:title="Password" android:key="Password" android:dependency="IS_ENABLED">
+		<Preference android:title="Set Password" android:key="key_set_pswd" />
+		<Preference android:title="Change Password" android:key="key_change_pswd"  />
+		<Preference android:title="Disable Password" android:key="key_disable_pswd"  />
+	</PreferenceScreen>
+	<Preference android:title="Disable system lock" android:key="key_disable_sys_lock" />
+	<Preference android:title="Change wallpaper" android:key="chnge_wlp" >
+	</Preference>
+
+	<CheckBoxPreference
+        android:key="key_use_24"
+        android:title="Use 24-hour format"
+        android:summaryOn="13:00"
+		android:summaryOff="1:00 PM"
+        android:defaultValue="false" />
+	<Preference android:title="Notifications" android:key="isNoti" android:summary="%s"/>
+	<SwitchPreference
+        android:key="isStatuBar"
+        android:title="System statusbar"
+        android:defaultValue="false" />
+</PreferenceScreen>

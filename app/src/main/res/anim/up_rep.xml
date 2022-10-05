@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:fillAfter="false">
+	
+	<translate
+		android:fromYDelta="0%p"
+		android:toYDelta="-10%p"
+		android:duration="200"
+		android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+		android:repeatMode="reverse"
+		android:repeatCount="3"
+		/>
+</set>
